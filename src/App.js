@@ -1,10 +1,14 @@
 import './App.css';
+import Headers from "./components/Headers";
 
 function App() {
   return (
-    <div className="text-3xl font-bold underline">
-hello world
-    </div>
+
+      <>
+
+          <Headers />
+      </>
+
   );
 }
 
