@@ -28,7 +28,7 @@ const Headers = () => {
                         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                     </div>
                 </div>
-                <img className="rounded-full" src={logo} alt="logo" height={100} width={100}/>
+                <img className="rounded-full mr-12" src={logo} alt="logo" height={100} width={100}/>
                 <div className="md:hidden">
                     <Hamburgers className="z-40 block hamburger md:hidden focus:outline-none">
 
