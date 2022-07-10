@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from "./Button";
 import temperature from '../assets/temperature.png';
 import rain from '../assets/rain.png';
 import wind from '../assets/wind.png';
@@ -8,12 +9,12 @@ const Weather = () => {
 
     return (
         <div className="relative container flex flex-col items-center max-w-6xl mx-auto my-5 px-6 text-gray-900 justify-center">
-            <div >
+            <div className="flex flex-col items-center text-2xl">
                 Nazwa lokalizacji
                 <table className="max-w-lg mt-10 mb-6 font-sans text-xl text-center text-darkblue ">
                 <thead>
                 <tr>
-                    <th className="p-2 pl-14">20.07.2022</th>
+                    <th className="p-2 pl-4">20.07.2022</th>
                     <th className="p-2 pl-14">Day</th>
                     <th className="p-2 pl-14">Night</th>
                 </tr>
