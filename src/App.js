@@ -1,5 +1,8 @@
 import './App.css';
 import Headers from "./components/Headers";
+import Section from "./components/Section";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -7,6 +10,8 @@ function App() {
       <>
 
           <Headers />
+          <Section />
+          <Footer />
       </>
 
   );
