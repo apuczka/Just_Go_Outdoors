@@ -12,7 +12,7 @@ const Footer = () => {
 
     return (
 
-            <div className="container max-w-6xl mx-auto px-6 py-12 flex justify-between" >
+            <div className="container max-w-6xl mx-auto px-6 py-12 flex justify-between bg-black text-white" >
                 <div>Copyright JustGoOutdoors.pl</div>
                 <div>
                     <i className="fa-brands fa-facebook-square m-0.5"></i>

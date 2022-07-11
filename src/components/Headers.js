@@ -13,16 +13,16 @@ const backgroundImage = {
 
 const Headers = () => {
     return (
-        <div className="container max-w-6xl mx-auto px-6 py-12">
-            {/*<img src={campfire} alt="" height={200} width={200}/>*/}
+        <div className="container max-w-6xl mx-auto px-6 py-12 shadow-xl">
             <nav className="flex items-center justify-between text-[grey]">
-                <div className="hidden h-10 font-sarif md:flex md:space-x-8 text-xl">
+                <img className="rounded-full mr-6 ml-11" src={logo} alt="logo" height={100} width={100}/>
+                <div className="hidden h-10 font-sarif md:flex md:space-x-8 text-xl mr-11">
                     <div className="group">
                         <a href="#">Home</a>
                         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                     </div>
                     <div className="group">
-                        <a href="#">Check weather</a>
+                        <a href="./#form-weather">Check the weather</a>
                         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                     </div>
                     <div className="group">
@@ -30,7 +30,8 @@ const Headers = () => {
                         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                     </div>
                 </div>
-                <img className="rounded-full mr-12" src={logo} alt="logo" height={150} width={150}/>
+
+
                 <div className="md:hidden">
                     <Hamburgers className="z-40 block hamburger md:hidden focus:outline-none">
 
@@ -47,13 +48,15 @@ const Headers = () => {
                 <a href="#" className="hover:text-green-600">Contact</a>
             </div>
 
-            <img src={rainGif} alt="" width={200} height={200}/>
-            <div
-                className="max-w-lg p-4 font-sans text-2xl text-[lightblue] mt-6 md:p-10 md:mx-0 md:text-4xl">
-                CHECK THE WEATHER AND GET GOING
-                <div className="text-xl text-[grey]">Zaplanuj wycieczkę w góry, sprawdź pogodę i w drogę</div>
 
-                <Button />
+            <div className="p-4 font-sans text-2xl text-[lightblue] mt-6 md:p-10 md:mx-0 md:text-4xl flex flex-col-reverse items-center md:flex-row justify-between">
+               <div className="flex flex-col">
+                   CHECK THE WEATHER AND GET GOING
+                   <div className="text-xl text-[grey]">Zaplanuj wycieczkę w góry, sprawdź pogodę i w drogę</div>
+
+                   <Button />
+               </div>
+                <img src={rainGif} alt="" width={200} height={200}/>
             </div>
 
 
