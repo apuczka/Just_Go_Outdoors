@@ -1,16 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  purge: {
+    enabled: true,
+    content: ['.src/**/*.js'],
+  },
+
   theme: {
     extend: {
       fontFamily: {
         sans: ["'Josefin Sans'", 'sans-serif'],
         alata: ['"Alata"','sans-serif'],
       },
-      backgroundImage: {
-        'campfire': "url('public/campfire.jpg')",
 
-      },
       colors: {
         'redNew': '#e63946ff',
         'light-blue': '#f1faeeff',

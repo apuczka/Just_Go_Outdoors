@@ -1,13 +1,13 @@
 import React from 'react';
 import Hamburgers from './Hamburger';
 import logo from '../assets/logo.png';
-import background from '../assets/background.jpg';
+// import background from '../assets/background.jpg';
 import Button from "./Button";
 import rainGif from '../assets/rain.gif'
 
-const backgroundImage = {
-    backgroundImage: "url(" + background + ")",
-};
+// const backgroundImage = {
+//     backgroundImage: "url(" + background + ")",
+// };
 
 
 
@@ -16,7 +16,7 @@ const Headers = () => {
         <div className="container max-w-6xl mx-auto px-6 py-12 shadow-xl">
             <nav className="flex items-center justify-between text-[grey]">
                 <img className="rounded-full mr-6 ml-11" src={logo} alt="logo" height={100} width={100}/>
-                <div className="hidden h-10 font-sarif md:flex md:space-x-8 text-xl mr-11">
+                <div className="hidden h-10 font-alata md:flex md:space-x-8 text-xl mr-11">
                     <div className="group">
                         <a href="#">Home</a>
                         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>

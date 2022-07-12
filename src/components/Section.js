@@ -5,7 +5,7 @@ import Weather from "./Weather";
 
 const Section = () => {
     return (
-        <section className="md:flex">
+        <section className="container max-w-6xl mx-auto px-6 py-12 shadow-xl md-flex">
             <Form />
             <Weather />
         </section>

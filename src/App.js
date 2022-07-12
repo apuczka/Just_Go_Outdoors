@@ -1,12 +1,13 @@
 import './App.css';
 import Headers from "./components/Headers";
 import Section from "./components/Section";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import background from "./assets/background.jpg";
+// import background from "./assets/background.jpg";
 
-const backgroundImage = {
-    backgroundImage: "url(" + background + ")",
-};
+// const backgroundImage = {
+//     backgroundImage: "url(" + background + ")",
+// };
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
 
           <Headers />
           <Section />
+          <Contact />
           <Footer />
       </div>
 
