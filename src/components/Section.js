@@ -5,7 +5,7 @@ import Weather from "./Weather";
 
 const Section = () => {
     return (
-        <section className="container max-w-6xl mx-auto px-6 py-12 shadow-xl md-flex">
+        <section className="container max-w-6xl mx-auto flex flex-col md:flex-row px-6 py-12 shadow-xl ">
             <Form />
             <Weather />
         </section>
