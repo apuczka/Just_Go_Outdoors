@@ -1,39 +1,31 @@
+import React, {Component} from "react";
 import './App.css';
+
 import Headers from "./components/Headers";
 import Section from "./components/Section";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import {useEffect, useState} from "react";
 
 
-const URL = `http://api.openweathermap.org/data/3.0/onecall/timemachine?lat=39.099724&lon=-94.578331&dt=1643803200&appid=f0b633cf571f1e53be74bf57ac4f25e6`
+// const URL = `https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=74630a06589374cbf88419b9a6e12b2f`
 
-
+// const URL = 'https://my.meteoblue.com/packages/basic-1h_basic-day?apikey=Nn7yFqWxHu50SLaG&lat=49.8224&lon=19.0469&asl=330&format=json&tz=Europe%2FWarsaw'
 
 function App() {
-    const [weather, setWeather] = useState(null);
-    // const [city, setCity] = useState("Londyn");
 
-    useEffect(() => {
-        fetch(`${URL}`)
-            .then((response) => response.json())
-            .then((weatherData) => {
-                setWeather(weatherData);
-            })
-            .catch((err) => console.error(err));
-    }, []);
-  return (
+    return (
 
-      <div>
+        <div>
 
-          <Headers id='page-wrap'/>
+            <Headers id='page-wrap'/>
 
-          <Section />
-          <Contact />
-          <Footer />
-      </div>
+            <Section/>
+            <Contact/>
+            <Footer/>
+        </div>
 
-  );
+    );
+
 }
 
 export default App;
