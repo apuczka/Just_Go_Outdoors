@@ -1,8 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Button from "./Button";
 import mailbox from '../assets/mailbox.png';
 
 const Contact = () => {
+const [name, setName] = useState()
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert(name + " Twoja wiadomość została wysłana")
+    }
+
     return (
         <div id='contact' className="container max-w-6xl mx-auto px-6 py-12 shadow-xl">
             <div className="w-2/3 m-auto p-8 ">
@@ -10,7 +16,7 @@ const Contact = () => {
                     <img src={mailbox} width={100} height={100} className="pr-5" />
                     <span>Contact Us</span>
                 </h1>
-                <form action="" className="flex flex-col">
+                <form onSubmit={handleSubmit} value={name} onChange={(event) => setName(event.target.value)} action="" className="flex flex-col">
                     <div className="my-2 flex flex-col">
                         <label htmlFor="name">Name</label>
                         <input type="text" className="border-2 p-2"/>
@@ -21,7 +27,7 @@ const Contact = () => {
                         <label htmlFor="message">Message</label>
                         <textarea className="border-2 p-2" id="message" cols="30" rows="10"></textarea>
                     </div>
-                    <Button />
+                    <Button   text={"Send"} />
                 </form>
             </div>
 

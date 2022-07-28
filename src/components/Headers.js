@@ -3,9 +3,13 @@ import logo from '../assets/logo.png';
 import Button from "./Button";
 import rainGif from '../assets/rain.gif'
 import Sidebar from "./Sidebar";
+import WeatherApp from './WeatherApp';
 
 
-const Headers = () => {
+
+const Headers = ( {weatherData}) => {
+
+
     return (
         <div className="container max-w-6xl mx-auto px-6 py-12 shadow-xl">
             <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}/>
@@ -22,7 +26,7 @@ const Headers = () => {
                         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                     </div>
                     <div className="group">
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                     </div>
                 </div>
@@ -36,8 +40,9 @@ const Headers = () => {
                     CHECK THE WEATHER AND GET GOING
                     <div className="text-xl text-[grey]">Zaplanuj wycieczkę w góry, sprawdź pogodę i w drogę</div>
 
-                    <Button/>
+                    <Button text="Go"/>
                 </div>
+                {/*<img src={`icons/${weatherData.daily[0].weather[0].icon}.png`} alt="weather-icon" height={200} width={200}/>*/}
                 <img src={rainGif} alt="" width={200} height={200}/>
             </div>
 
