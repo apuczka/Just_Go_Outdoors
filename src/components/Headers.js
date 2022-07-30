@@ -22,7 +22,7 @@ const Headers = ( {weatherData}) => {
                         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                     </div>
                     <div className="group">
-                        <a href="./#form-weather">Check the weather</a>
+                        <a href="#form-weather">Check the weather</a>
                         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                     </div>
                     <div className="group">
@@ -38,7 +38,7 @@ const Headers = ( {weatherData}) => {
                 className="p-4 font-sans text-2xl text-[lightblue] mt-6 md:p-10 md:mx-0 md:text-4xl flex flex-col-reverse items-center md:flex-row justify-between">
                 <div className="flex flex-col">
                     CHECK THE WEATHER AND GET GOING
-                    <div className="text-xl text-[grey]">Zaplanuj wycieczkę w góry, sprawdź pogodę i w drogę</div>
+                    <div className="text-xl text-[grey]">Plan a trip to the mountains, check the weather and hit the road</div>
 
                     <Button text="Go"/>
                 </div>

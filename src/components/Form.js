@@ -13,6 +13,7 @@ const Form = ({watchCity}) => {
 
         setCity(e.target.value);
 
+
     }
     useEffect(() => {
         watchCity(city);
