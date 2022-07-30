@@ -3,10 +3,16 @@ import Button from "./Button";
 import mailbox from '../assets/mailbox.png';
 
 const Contact = () => {
-const [name, setName] = useState()
+const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [message, setMessage] = useState()
     const handleSubmit = (e) => {
-        e.preventDefault();
         alert(name + " Twoja wiadomość została wysłana")
+        e.preventDefault();
+        setName("")
+        setEmail("")
+        setMessage("")
+
     }
 
     return (
@@ -16,18 +22,18 @@ const [name, setName] = useState()
                     <img src={mailbox} width={100} height={100} className="pr-5" />
                     <span>Contact Us</span>
                 </h1>
-                <form onSubmit={handleSubmit} value={name} onChange={(event) => setName(event.target.value)} action="" className="flex flex-col">
+                <form onSubmit={handleSubmit}  action="" className="flex flex-col">
                     <div className="my-2 flex flex-col">
                         <label htmlFor="name">Name</label>
-                        <input type="text" className="border-2 p-2"/>
+                        <input value={name} onChange={(event) => setName(event.target.value)}type="text" className="border-2 p-2"/>
                         <label htmlFor="email">Email</label>
-                        <input type="email" className="border-2 p-2" />
+                        <input value={email} onChange={(event) => setEmail(event.target.value)}type="email" className="border-2 p-2" />
                     </div>
                     <div className="my-2 flex flex-col">
                         <label htmlFor="message">Message</label>
-                        <textarea className="border-2 p-2" id="message" cols="30" rows="10"></textarea>
+                        <textarea value={message} onChange={(event) => setMessage(event.target.value)}className="border-2 p-2" id="message" cols="30" rows="10"></textarea>
                     </div>
-                    <Button   text={"Send"} />
+                    <Button text={"Send"} />
                 </form>
             </div>
 
