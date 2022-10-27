@@ -19,7 +19,7 @@ function App() {
 
             <Headers id='page-wrap'/>
 
-            <Section/>
+            <Section />
             <Contact/>
             <Footer/>
         </div>

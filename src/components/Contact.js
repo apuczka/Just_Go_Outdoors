@@ -16,7 +16,7 @@ const [name, setName] = useState();
     }
 
     return (
-        <div id='contact' className="container max-w-6xl mx-auto px-6 py-12 shadow-xl">
+        <div id='contact' className="hidden container max-w-6xl mx-auto px-6 py-12 shadow-xl">
             <div className="w-2/3 m-auto p-8 ">
                 <h1 className="text-4xl font-bold flex items-center">
                     <img src={mailbox} width={100} height={100} className="pr-5" />
